@@ -922,7 +922,7 @@ html{
         e.preventDefault()
         fetch(scriptURL, { method: 'POST', body: new FormData(form)})
           .then(response => {
-            msg.innerHTML="Message Sent Succesfully, Thank You for your respond"
+            msg.innerHTML="Message Sent Succesfully, Thank You for your response"
             setTimeout(function(){
               msg.innerHTML=""
             },5000)
