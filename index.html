@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>new demo harry</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&family=Poppins:wght@400;700&family=Rubik:wght@300&family=Source+Code+Pro:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik+Burned&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300&family=Merriweather&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Creepster&family=Rubik+Doodle+Triangles&family=Shadows+Into+Light&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:wght@100;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://kit.fontawesome.com/de9f4a8b02.js" crossorigin="anonymous"></script>
+    <style>
+      
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+html{
+  scroll-behavior: smooth;
+}
+      body {
+        background-color: #e9edc9;
+        font-family: "Poppins", sans-serif;
+      }
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        background-color: #ffd6a5;
+      }
+      
+      nav ul li {
+        display: inline-block;
+        list-style: none;
+        margin: 10px 20px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        font-size: 18px;
+        position: relative;
+      }
+      nav ul li a::after {
+        content: '';
+        width: 0;
+        height: 3px;
+        background: #ff004f;
+        position: absolute;
+        left: 0;
+        bottom: -6px;
+        transition: 0.5s;
+      }
+
+      nav ul li a:hover::after {
+        width: 100%;
+      }
+      main hr {
+      border: 0;
+      background-color: #a3b18a;
+      height: 0.2px;
+      margin: 35px 0px;
+}
+        .left img {
+        border-radius: 50%;
+        width: 79px;
+        height: 72px;
+        margin-left: 59px;
+        margin-top: 8px;
+
+      }
+      .social-media {
+        align-items: center;
+        align-content: flex-end;
+        display: flex;
+        justify-content: center;
+        margin: 5% 7%;
+      }
+      /*main Body firstSection*/
+      .firstSection {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 70px 0;
+      }
+      .firstSection div {
+        width: 40%;
+      }
+      .leftSection {
+        size: 3rem;
+        width: 60%;
+      }
+      .rightSection{
+        justify-content: center;
+        align-items: center;
+      }
+      .rightSection img {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 260px;
+      }
+      .rightSection > div {
+        width: 50%;
+        align-items: center;
+        justify-content: center ;
+      }
+      
+      .home__title {
+        font-size: 2.3rem;
+      }
+
+      .home__title-color {
+        color: brown;
+        font-size: 2.5rem;
+      }
+      .home__blob {
+        fill: #773344;
+        width: 100%;
+      }
+      /* .home__blob:hover {
+              fill: #b4d911;
+            } */
+
+      .home__blob-img {
+        width: 360px;
+      }
+      #element {
+        color: brown;
+      }
+      .About {
+        max-width: 80vw;
+        margin: auto;
+      }
+      .About h1 {
+        font-size: 1.9rem;
+      }
+      .aboutContainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .About-my-info {
+        text-align: justify;
+        font-size: 15px;
+        /* font-family: 'Libre Franklin', sans-serif;
+        font-family: 'Merriweather', serif; */
+      }
+      .About-my-info b {
+        text-align-last: center;
+      }
+
+      .About-my-info-png img {
+        width: 350px;
+        /* height: 434px; */
+      }
+
+      .skills {
+        max-width: 80vw;
+        margin: auto;
+      }
+      .skills h1 {
+        font-size: 1.9rem;
+      }
+      .tab-Titles {
+        display: flex;
+        margin: 20px 0 40px;
+      }
+      .tab-links {
+        margin-right: 50px;
+        font-size: 18px;
+        font-weight: 500;
+        cursor: pointer;
+        position: relative;
+      }
+      .tab-links::after {
+        content: "";
+        width: 0;
+        height: 3px;
+        background: rgb(201, 89, 138);
+        position: absolute;
+        left: 0;
+        bottom: -8px;
+        transition: 0.5s;
+      }
+
+      .tab-links.active-link::after {
+        width: 100%;
+      }
+
+      .tab-contents ul li {
+        list-style: none;
+        margin: 10px 0;
+      }
+      .tab-contents ul li span {
+        color: #f48a00;
+        font-size: 15px;
+      }
+      .tab-contents {
+        display: none;
+      }
+      .tab-contents.active-tab {
+        display: block;
+      }
+
+      /* #portfolio{
+  padding: 50px 0;
+} */
+      .portfolio {
+        max-width: 80vw;
+        margin: auto;
+      }
+      .portfolio h1 {
+        font-size: 1.9rem;
+      }
+      .work-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-gap: 40px;
+        margin-top: 50px;
+      }
+      .work {
+        border: 10px;
+        position: relative;
+        overflow: hidden;
+      }
+      .work img {
+        width: 100%;
+        border-radius: 10px;
+        display: block;
+        transition: trasnform 0.5s;
+      }
+      .layer {
+        width: 100%;
+        height: 0;
+        background: linear-gradient(rgba(199, 7, 7, 0.477), #6af3ffe3);
+        border-radius: 10px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        font-size: 10px;
+        transition: height 0.5s;
+      }
+
+      .layer h3 {
+        font-weight: 500;
+        font-size: 14px;
+        margin-bottom: 20px;
+      }
+
+      .layer a {
+        margin-top: 20px;
+        color: #cd6b50;
+        text-decoration: none;
+        font-size: 18px;
+        line-height: 60px;
+        background-color: rgb(242, 215, 215);
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        text-align: center;
+        justify-content: center;
+        
+      }
+      .work:hover img{
+        transform: scale(1.1);
+      }
+      .work:hover .layer{
+        height: 100%;
+      }
+      .btn{
+        display: block;
+        margin: 50px auto;
+        width: fit-content;
+        border: 1px solid #ef004f;
+        padding: 14px 50px;
+        border-radius: 6px;
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+      }
+      .btn:hover{
+        background-color: #ff004f;
+      }
+      .contact_me_block{
+        max-width: 80vw;
+        margin: auto;
+      }
+/* -----------------------contact _----------------------- */
+    .contact_me_containner{
+    margin: 0 10%;
+    align-items: center;
+    }
+    .row{
+      display: flex;
+      margin-left: 10% 10%;
+      align-items: center;
+      max-width: 100%;
+    }
+    .contact-left{
+        flex-basis: 40%; 
+       
+    }
+    .contact-right{
+        flex-basis: 58%;
+    }
+
+    .contact-left p{
+      margin-top: 30px;
+
+
+
+      
+    }
+    .contact-left p i{
+      margin-left: 15px;
+      font-size: 25px;
+      margin: 0 15px;
+
+      
+    }
+    .social-icons{
+      margin-top: 30px;
+    }
+    .social-icons a{
+      text-decoration: none;
+      font-size: 30px;
+      margin: 13px;
+      color: #673030;
+      display: inline-block;
+      transition: transform 0.5s;
+    }
+    .social-icons a:hover{
+      color: blue;
+      transform: translateY(-5px);
+    }
+
+    .btn2{
+      display: inline-block;
+      background: #ef004f;
+    }
+
+    .contact-right form{
+        width: 100%;
+
+        }
+    form input, form textarea{
+      width: 100%;
+      border: 0;
+      outline: none;
+      background: #ccd5ae;
+      padding: 15px;
+      margin: 15px 0;
+      color: #000000;
+      font-size: 18px;
+    }
+      form .btn2{
+        padding: 14px 60px ;
+        font-size: 18px;
+        margin-top: 20px;
+        cursor: pointer;
+      }
+
+      .copyright{
+        width: 100%;
+        text-align: center;
+        padding: 25px 0;
+        background: #262626;
+        font-weight: 300;
+        margin-top: 20px;
+        color: #fff;
+
+
+      }
+      .copyright i{
+        color: red;
+      }
+
+      .FirstSecButton{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0px 54px;
+      
+      }
+      .Resume{
+        margin-right: 30px;
+      }
+      .Github{
+        margin-left: 30px;
+      }
+
+      /* ----------------------------CSS for small screen--------------------------------------- */
+
+
+      nav .fa-solid{
+        display: none;
+      }
+      @media only screen and (max-width: 600px){ 
+
+        nav .fa-solid{
+        display: block;
+        font-size: 25px;
+        margin-right: 20px;
+
+      }
+
+      nav ul{
+        background-color: #ef004f;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 115px;
+        height: 100vh;
+        padding-top: 50px;
+        color: white;
+        z-index: 2;
+        transition: right 0.5s;
+      }
+      nav ul li{
+        display: block;
+        margin: 25px;
+        
+      }
+      nav ul li a{
+        color: white
+      }
+      nav ul .fa-solid{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+      }
+        #nav{
+          width: 100%;
+        }
+        .home__title {
+          font-size: 0.7rem;
+      }
+      .home__title-color{
+        font-size: 1rem;
+      }
+
+          .firstSection {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              margin: 30px 0;
+          }
+
+      .left img {
+              border-radius: 50%;
+              /* border: 2px solid black; */
+              /* padding: 5px; */
+              width: 0px;
+              height: 72px;
+              margin-left: 0px;
+              margin-top: 8px;
+            }
+            .btn {
+              display: block;
+              margin: 10px auto;
+              width: fit-content;
+              border: 1px solid #ef004f;
+              padding: 5px 7px;
+              border-radius: 6px;
+              text-decoration: none;
+              color: rgb(0, 0, 0);
+          }
+          
+          .About-my-info-png img {
+          /* width: 350px; */
+          /* height: 434px; */
+          display:none;
+      }
+      .About-my-info {
+          text-align: justify;
+          font-size: 10px;
+          max-width: 100%;
+      }
+      .About h1 {
+          font-size: 1.1rem;
+      }
+      .portfolio h1 {
+      font-size: 1.1rem;
+      }
+      .tab-links{
+        font-size: 14px;
+      }
+
+      .contact-left p i{
+            margin-left: 15px;
+            font-size: 20px;
+            margin: 0 15px;
+
+            
+          }
+          .social-icons{
+            margin-top: 30px;
+          }
+          .social-icons a{
+            font-size: 27px;
+            margin: 20px 20px;
+            flex-basis: 100%;
+            width: fit-content;
+
+          }
+          .btn {
+            font-size: 12px;
+          }
+
+          .contact_me_containner {
+          max-width: 100%;
+          }
+
+          .row {
+          display: flex;
+          margin-left: 10% 10%;
+          align-items: baseline;
+          max-width: 100%;
+          align-content: flex-start;
+          justify-content: center;
+          flex-wrap: wrap;
+
+      }
+      .contact-right {
+        flex-basis: 100%;
+          /* max-width: 100%; */
+          margin: 0px 10px;
+          align-items: center;
+          justify-content: center;
+      }
+      .contact-left h1{
+        font-size: 1rem;
+      }
+      .contact-left p{
+        font-size:10px;
+      }
+
+
+      .contact-left {
+          flex-basis: 100%;
+          /* max-width: 100%; */
+          margin: 0px 10px;
+      }
+
+
+      form input, form textarea {
+          width: 88%;
+          border: 0;
+          outline: none;
+          background: #ccd5ae;
+          padding: 15px;
+          margin: 15px 10px;
+          color: #000000;
+          font-size: 12px;
+      }
+
+      .Resume{
+        margin-right: 20px;
+      }
+
+      }
+      #msg{
+        color: #750606;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      display: block;
+      }
+      .fa-paper-plane{
+        color: #673030;
+      }
+      .fa-phone{
+        color: #673030;
+      }
+
+
+
+
+
+
+
+
+    </style>
+  </head>
+  <body>
+    <header id="header">
+      <nav>
+        <div class="left">
+          <img src="img/Elegant Circle Signature Photography Logo.png" alt="" />
+        </div>
+
+        <div class="right">
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Skills">Skills</a></li>
+            <li><a href="#Projects">Projects</a></li>
+            <li><a href="#Contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </div>
+        <!-- <div class="social-media">
+          <li><img src="img/linkedin.png" alt="" /></li>
+          <li><img src="img/hackerrank.png" alt="" /></li>
+          <li><img src="img/github.png" alt="" /></li>
+        </div> -->
+      </nav>
+    </header>
+    <main>
+      <section class="firstSection">
+        <div class="leftSection">
+          <h1 class="home__title">
+            Hey,<br />I'am <span class="home__title-color">Abhay Ghadage</span
+            ><br />
+            and I am passionate
+            <br />Web Developer<br />
+            <span id="element"></span>
+          </h1>
+          <div class="FirstSecButton">
+          <a href="https://drive.google.com/file/d/1LKuSc3hSjL8bv35pwR_ykONZmPUSrEcH/view?usp=drive_link" download target="_blank"  class="btn Resume">Resume</a>
+          <a href="https://github.com/AbhayGhadage" target="_blank" class="btn GitHub">GitHub</a>
+        </div>
+        </div>
+        <!-- <div class="home__img ">
+          
+          <img src="img/bagroundRem.png" alt="" />  
+        </div> -->
+        <div class="rightSection">
+          <svg
+            class="home__blob"
+            viewBox="0 0 700 500"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          >
+            <mask id="mask0" mask-type="alpha">
+              <path
+                d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"
+              />
+            </mask>
+            <g mask="url(#mask0)">
+              <path
+                d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"
+              />
+              <image
+                class="home__blob-img"
+                x="50"
+                y="60"
+                href="img/bagroundRem.png"
+              />
+            </g>
+          </svg>
+        </div>
+      </section>
+      <!-- About-->
+
+      <section class="About" id="About">
+        <hr />
+        <h1>About</h1>
+        <div class="aboutContainer">
+          <div class="About-my-info">
+            <br />
+            <p>
+              Hello, my name is <i>Abhay Ghadage.</i> I'm a dynamic professional
+              with a Bachelor's in Engineering from Sinhgad College of
+              Engineering, Pune.
+            </p>
+            <br />
+            <p>
+              I have a strong foundation in software testing, Java programming,
+              and frontend development. I've completed impactful projects, such
+              as a Django-based Car Rental System and a React Web Application
+              with CRUD operations. My commitment to excellence is further
+              demonstrated by my contribution to the successful implementation
+              of the OrangeHRM project during an Training,
+            </p>
+            <br />
+            where I actively engaged in manual and automation testing. I bring a
+            solid technical skill set, including proficiency in <b>Java</b> ,
+            <b>Python</b> , <b>HTML5</b> , <b>CSS3</b> , and <b>JavaScript</b>.
+            I am also Microsoft Certified in Azure Fundamentals. My ability to
+            solve problems and my hands-on experience in software testing,
+            combined with a creative approach to frontend development.
+
+            <div class="tab-Titles" id="Skills">
+              <br />
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                <b>Skills</b>
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                <b>Experience</b>
+              </p>
+              <p class="tab-links" onclick="opentab('education')">
+                <b>Education</b>
+              </p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>UI/UX</span><br />Design web/app interface</li>
+                <li><span>Web Development</span><br />Web App Development</li>
+                <li>
+                  <span>QA Testing</span><br />Automation Testing / Manual
+                  Testing
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>Jan 2023</span><br />Front end internship Under IBM
+                </li>
+                <li>
+                  <span>July 2023 to Jan 2024</span><br />software testing
+                  Training at ExcelR Solution
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2019 to 2023</span><br />Bachelor from Sinhgad College
+                  Of Engineering, Pune <br />
+                </li>
+                <li>
+                  <span>2018 to 2019</span><br />HSC from Shree Wagheshwar
+                  Vidyadham Shirur, Pune
+                </li>
+                <li>
+                  <span>2016 to 2017</span><br />SSC from Shree Wagheshwar
+                  Vidyadham Shirur, Pune
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="About-my-info-png">
+            <img src="img/AbhayBD1BGIMG.png" alt="" />
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="portfolio" id="Projects"> 
+          <div class="container">
+            <hr />
+            <h1 class="subtitle">My Work</h1>
+            <div class="work-list">
+              <div class="work">
+                <img src="img/p1.jpg" />
+                <div class="layer">
+                  <h3>Django Based Web Application</h3>
+                  <p>
+                    Admin interface to manage data (CRUD operations) on
+                    application User-Interface with functionalities like filter,
+                    book, update booking, feedback etc.
+                  </p>
+                  <a href=""
+                    <i class="fa fa-external-link"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="work">
+                <img src="img/p2.jpg" />
+                <div class="layer">
+                  <h3>React Web Application</h3>
+                  <p>
+                    Get user data from API reqres.in <br />Store in redux store
+                    <br />Perform CRUD operation on cards.
+                  </p>
+                  <a href=""
+                  <i class="fa fa-external-link"></i>
+                </a>
+                </div>
+              </div>
+              <div class="work">
+                <img src="img/p3.jpg" />
+                <div class="layer">
+                  <h3>Testing OrangeHRM</h3>
+                  <p>
+                    implementation of Orange HRM project <br />
+                    by actively engaging in manual testing <br />
+                    and automation testing.
+                  </p>
+                  <a href=""
+                  <i class="fa fa-external-link"></i>
+                </a>
+                </div>
+              </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+          </div>
+        </div>
+      </section>
+
+<!-- ______________________________contact--------------------------------------- -->
+
+
+
+      <section id="Contact">
+       
+        <div class="contact_me ">
+          
+          <div class="contact_me_containner">
+             <hr />
+            <div class="row">
+              <div class="contact-left">
+                <h1 class="sub-titile">Contact me </h1>
+                <p ><i class="fa-solid fa-paper-plane"></i>abhayghadage9696@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>+919503797189</p>
+
+                <div class="social-icons">
+                <a target="_blank" href="https://www.linkedin.com/in/abhay-ghadage/"><i class="fa-brands fa-linkedin"></i></a>
+                <a target="_blank" href="https://twitter.com/Abhay61495992?t=4x5asddmgX5kGegFGphSNg&s=08"><i class="fa-brands fa-twitter"></i></a>
+                <a target="_blank" href="https://www.instagram.com/abhay_ghadage?igsh=dm90ZGV1czJhMXln"><i class="fa-brands fa-instagram"></i></a>
+                <a target="_blank" href="https://www.hackerrank.com/profile/abhayghadage9696"><i class="fa-brands fa-hackerrank"></i></a>
+
+              </div>
+              <a href="https://drive.google.com/file/d/1LKuSc3hSjL8bv35pwR_ykONZmPUSrEcH/view?usp=drive_link" target="_blank" class="btn btn2" download>Download Cv</a>
+            </div>
+            
+            <div class="contact-right">
+              <form name="submit-to-google-sheet">
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="Email" placeholder="Your Email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <span id="msg"></span>
+          
+                <button type="submit" class="btn btn2">Submit</button>
+              </form>
+              
+              </div>
+            
+            </div>
+             
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="copyright">
+          <p>Copyright &#169 Abhay Ghadage , portfolio 2024<i class="fa-solid fa-heart"></i> </p>
+        </div>
+      </section>
+
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["Web Developer.", "Graphic Designer.", "Selenium Testing."],
+        typeSpeed: 50,
+      });
+    </script>
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+    <script>
+      var sidemenu= document.getElementById("sidemenu");
+
+      function openmenu(){
+        sidemenu.style.right = 0;
+      }
+      function closemenu(){
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbzbZgtnHuEOe7gPgMeVHxtmrnwkuKzTe-htoUdqiSCTv5u5rZ_GTpalbFy9hKg5Fniv/exec'
+      const form = document.forms['submit-to-google-sheet']
+      const msg=document.getElementById("msg")
+    
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => {
+            msg.innerHTML="Message Sent Succesfully, Thank You for your respond"
+            setTimeout(function(){
+              msg.innerHTML=""
+            },5000)
+            form.reset()
+          })
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
+  </body>
+</html>
